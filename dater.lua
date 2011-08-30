@@ -48,11 +48,11 @@ function init(thisNumber)
 	end
 	
 	function dateTable:date()
-		return string.format("%d-%d-%d", temp.day, temp.month, temp.year)
+		return string.format("%02d-%02d-%04d", temp.day, temp.month, temp.year)
 	end
 	
 	function dateTable:time()
-		return string.format("%d:%d:%d", temp.hour, temp.min, temp.sec)
+		return string.format("%02d:%02d:%02d", temp.hour, temp.min, temp.sec)
 	end
 	
  return dateTable
